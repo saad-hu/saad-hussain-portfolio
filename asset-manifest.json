@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/saad-hussain-portfolio/static/css/main.c8b5ef02.css",
+    "main.js": "/saad-hussain-portfolio/static/js/main.c99e26ee.js",
+    "static/media/res-demo-0.png": "/saad-hussain-portfolio/static/media/res-demo-0.7fa755339a1f59b6a12d.png",
+    "static/media/wp-project.png": "/saad-hussain-portfolio/static/media/wp-project.64982de24e58b113b322.png",
+    "static/media/weather-demo-0.png": "/saad-hussain-portfolio/static/media/weather-demo-0.82b477eaf90c32735841.png",
+    "static/media/youtube-clone.png": "/saad-hussain-portfolio/static/media/youtube-clone.2cc80c677d178b052c76.png",
+    "static/media/test-website.png": "/saad-hussain-portfolio/static/media/test-website.97d410edd4aa27a1089f.png",
+    "static/media/bs-ninja-book.png": "/saad-hussain-portfolio/static/media/bs-ninja-book.a7a9bbb95f0a818c512d.png",
+    "static/media/form-demo.png": "/saad-hussain-portfolio/static/media/form-demo.6d30b5e226a778c403aa.png",
+    "static/media/dashboard-demo.png": "/saad-hussain-portfolio/static/media/dashboard-demo.5bae502b14c0712e5a76.png",
+    "static/media/rps-demo.png": "/saad-hussain-portfolio/static/media/rps-demo.aa5b35eadf678e41cc56.png",
+    "static/media/library-demo.png": "/saad-hussain-portfolio/static/media/library-demo.b7189f5360cd82f57229.png",
+    "static/media/etch-color-demo.png": "/saad-hussain-portfolio/static/media/etch-color-demo.23c9eeef57d385066438.png",
+    "static/media/calc-demo.png": "/saad-hussain-portfolio/static/media/calc-demo.e56ddf0800efcb9d68ce.png",
+    "static/media/tic-tac-toe.png": "/saad-hussain-portfolio/static/media/tic-tac-toe.7a8e747ead66a9c6fd53.png",
+    "static/media/nodejs-icon.svg": "/saad-hussain-portfolio/static/media/nodejs-icon.502737ea1f44b9be4170cafd2bace4e7.svg",
+    "static/media/reactjs-icon.svg": "/saad-hussain-portfolio/static/media/reactjs-icon.6c1d44b8c59f0f72ff199a54ceed774c.svg",
+    "static/media/mongodb-icon.svg": "/saad-hussain-portfolio/static/media/mongodb-icon.0781b723446e1f8a1734f7831a9c3313.svg",
+    "index.html": "/saad-hussain-portfolio/index.html",
+    "static/media/expressjs-icon.svg": "/saad-hussain-portfolio/static/media/expressjs-icon.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
+    "main.c8b5ef02.css.map": "/saad-hussain-portfolio/static/css/main.c8b5ef02.css.map",
+    "main.c99e26ee.js.map": "/saad-hussain-portfolio/static/js/main.c99e26ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8b5ef02.css",
+    "static/js/main.c99e26ee.js"
+  ]
+}
