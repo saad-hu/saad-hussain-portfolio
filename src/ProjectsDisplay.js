@@ -17,10 +17,12 @@ import RpsImage from './images/rps-demo.png';
 import LibraryImage from './images/library-demo.png';
 import TictactoeImage from './images/tic-tac-toe.png';
 import WpImage from './images/wp-project.png';
+import MernWeatherImage from './images/mern-weather.png';
 
 
 
 const projects = [
+    { name: 'MERN Weather App', image: MernWeatherImage, techUsed: ['Socket.io', 'MongoDB', 'Express', 'React', 'Node.js', 'Material UI'], githubRepo: 'https://github.com/saad-hu/bcp-weather-app' },
     { name: 'Weather App', image: WeatherAppImage, techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-weather-app', demoLink: 'https://saad-hu.github.io/project-weather-app/' },
     { name: 'Etch A Sketch', image: SketchImage, techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-etch-a-sketch', demoLink: 'https://saad-hu.github.io/project-etch-a-sketch/' },
     { name: 'Library', image: LibraryImage, techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-library', demoLink: 'https://saad-hu.github.io/project-library/' },
@@ -89,14 +91,16 @@ const ProjectsDisplay = () => {
                                         </Tooltip>
                                     )}
 
-                                    <Tooltip title='Live Demo'>
-                                        <Link href={project.demoLink} sx={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }} >
-                                            <IconButton component="label" onMouseEnter={addRotationClass} onMouseLeave={removeRotationClass}>
-                                                <OpenInBrowserIcon sx={{ fontSize: 30 }} />
-                                            </IconButton>
-                                        </Link>
+                                    {project.demoLink && (
+                                        <Tooltip title='Live Demo'>
+                                            <Link href={project.demoLink} sx={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }} >
+                                                <IconButton component="label" onMouseEnter={addRotationClass} onMouseLeave={removeRotationClass}>
+                                                    <OpenInBrowserIcon sx={{ fontSize: 30 }} />
+                                                </IconButton>
+                                            </Link>
+                                        </Tooltip>
+                                    )}
 
-                                    </Tooltip>
                                 </CardActions>
                             </Card>
                         </Paper>

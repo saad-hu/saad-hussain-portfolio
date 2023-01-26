@@ -1,7 +1,7 @@
 import { Typography, Box, Stack } from "@mui/material";
 
 
-const skills = ['JavaScript', 'MongoDB', 'Express.js', 'React JS', 'Node.js', 'Webpack', 'Redux/Redux Toolkit', 'Firebase','Material UI', 'Bootstrap 5', 'HTML5', 'CSS3', 'SQL', 'C/C++', 'MATLAB', 'Linux OS (Ubuntu)', 'WordPress'];
+const skills = ['JavaScript', 'MongoDB', 'Express.js', 'React JS', 'Node.js', 'Webpack', 'Redux/Redux Toolkit', 'Firebase','Material UI', 'Socket.io', 'Bootstrap 5', 'HTML5', 'CSS3', 'SQL', 'C/C++', 'MATLAB', 'Linux OS (Ubuntu)', 'WordPress'];
 
 const Skills = () => {
     return (
