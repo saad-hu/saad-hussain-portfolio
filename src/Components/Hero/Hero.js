@@ -1,16 +1,9 @@
-import { Grid, Typography, Stack, Divider, Chip } from "@mui/material";
-
-import MongoLogo from './logos/mongodb-icon.svg'
-import ExpressLogo from './logos/expressjs-icon.svg';
-import ReactLogo from './logos/reactjs-icon.svg';
-import NodeLogo from './logos/nodejs-icon.svg';
+import { Grid, Typography, Stack } from "@mui/material";
 
 
-
-
-function Home() {
+function Hero() {
     return (
-        <Grid px={1} container py={5} sx={{ backgroundColor: '#525252', color: '#fafafa' }}>
+        <Grid px={1} container py={5}>
 
 
             <Grid item xs={12} sm={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -21,13 +14,13 @@ function Home() {
 
             <Grid item xs={12} sm={6}>
                 <Stack alignItems="center" justifyContent="center" spacing={3} mb={3} direction={{ xs: 'column', sm: 'row' }}>
-                    <img src={MongoLogo} alt="MongoDB logo" className="mern-svg rotate-vert-center" />
-                    <img src={ExpressLogo} alt="Express logo" className="mern-svg rotate-vert-center" />
+                    <img src={process.env.PUBLIC_URL + "/Assets/mongodb-icon.svg"} alt="MongoDB logo" className="mern-svg rotate-vert-center" />
+                    <img src={process.env.PUBLIC_URL + "/Assets/expressjs-icon.svg"} alt="Express logo" className="mern-svg rotate-vert-center" />
                 </Stack>
 
                 <Stack alignItems="center" justifyContent="center" spacing={3} direction={{ xs: 'column', sm: 'row' }}>
-                    <img src={ReactLogo} alt="React logo" className="mern-svg rotate-vert-center" />
-                    <img src={NodeLogo} alt="Node logo" className="mern-svg rotate-vert-center" />
+                    <img src={process.env.PUBLIC_URL + "/Assets/reactjs-icon.svg"} alt="React logo" className="mern-svg rotate-vert-center" />
+                    <img src={process.env.PUBLIC_URL + "/Assets/nodejs-icon.svg"} alt="Node logo" className="mern-svg rotate-vert-center" />
                 </Stack>
             </Grid>
 
@@ -35,4 +28,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default Hero;

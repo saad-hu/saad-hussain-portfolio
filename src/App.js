@@ -1,19 +1,7 @@
-import Home from "./Home";
-import ProjectsDisplay from "./ProjectsDisplay";
-import Skills from "./Skills";
-import Footer from "./Footer";
+import HomePage from "./Pages/HomePage";
 
 function App() {
-  return (
-    <div className="App">
-
-      <Home />
-      <ProjectsDisplay />
-      <Skills />
-      <Footer />
-
-    </div>
-  );
+  return <HomePage />
 }
 
 export default App;

@@ -1,41 +1,30 @@
 import { Stack, Box, Card, CardContent, CardActions, CardMedia, Typography, Button, Grid, Paper, Link, IconButton, Tooltip, Alert } from '@mui/material';
 
+// icons
 import GitHubIcon from '@mui/icons-material/GitHub';
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 
-import WeatherAppImage from './images/weather-demo-0.png';
-import YoutubeCloneImage from './images/youtube-clone.png';
-import TestWebisteImage from './images/test-website.png';
-import BsNinjaImage from './images/bs-ninja-book.png';
-import ResPageImage from './images/res-demo-0.png';
-import DashboardImage from './images/dashboard-demo.png';
-import SignupFormImage from './images/form-demo.png';
-import SketchImage from './images/etch-color-demo.png';
-import CalcImage from './images/calc-demo.png';
-import RpsImage from './images/rps-demo.png';
-import LibraryImage from './images/library-demo.png';
-import TictactoeImage from './images/tic-tac-toe.png';
-import WpImage from './images/wp-project.png';
-import MernWeatherImage from './images/mern-weather.png';
 
+
+const PUBLIC_URL = process.env.PUBLIC_URL;
 
 
 const projects = [
-    { name: 'MERN Weather App', image: MernWeatherImage, techUsed: ['Socket.io', 'MongoDB', 'Express', 'React', 'Node.js', 'Material UI'], githubRepo: 'https://github.com/saad-hu/bcp-weather-app' },
-    { name: 'Weather App', image: WeatherAppImage, techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-weather-app', demoLink: 'https://saad-hu.github.io/project-weather-app/' },
-    { name: 'Etch A Sketch', image: SketchImage, techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-etch-a-sketch', demoLink: 'https://saad-hu.github.io/project-etch-a-sketch/' },
-    { name: 'Library', image: LibraryImage, techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-library', demoLink: 'https://saad-hu.github.io/project-library/' },
-    { name: 'Tic Tac Toe', image: TictactoeImage, techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-tic-tac-toe', demoLink: 'https://saad-hu.github.io/project-tic-tac-toe/' },
-    { name: 'Rock Paper Scissors', image: RpsImage, techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-rock-paper-scissors', demoLink: 'https://saad-hu.github.io/project-rock-paper-scissors/' },
-    { name: 'Signup Form', image: SignupFormImage, techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-signup-form', demoLink: 'https://saad-hu.github.io/project-signup-form/' },
-    { name: 'Calculator', image: CalcImage, techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-calculator', demoLink: 'https://saad-hu.github.io/project-calculator/' },
-    { name: 'Restaurant Website', image: ResPageImage, techUsed: ['Webpack', 'JavaScript', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-restaurant-page', demoLink: 'https://saad-hu.github.io/project-restaurant-page/' },
-    { name: 'Dashboard', image: DashboardImage, techUsed: ['HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-admin-dashboard', demoLink: 'https://saad-hu.github.io/project-admin-dashboard/' },
-    { name: 'Bootstrap Website', image: BsNinjaImage, techUsed: ['HTML', 'Bootstrap'], githubRepo: 'https://github.com/saad-hu/bootstrap-ninja-book', demoLink: 'https://saad-hu.github.io/bootstrap-ninja-book/' },
-    { name: 'Landing Page Test', image: TestWebisteImage, techUsed: ['HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/assessment-website-0', demoLink: 'https://saad-hu.github.io/assessment-website-0/' },
-    { name: 'YouTube Clone', image: YoutubeCloneImage, techUsed: ['HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/bcp-youtube-page', demoLink: 'https://saad-hu.github.io/bcp-youtube-page/' },
-    { name: 'WordPress Website', image: WpImage, techUsed: ['WordPress'], demoLink: 'https://project-wp-1.rf.gd/' }
+    { name: 'MERN Weather App', techUsed: ['Socket.io', 'MongoDB', 'Express', 'React', 'Node.js', 'Material UI'], githubRepo: 'https://github.com/saad-hu/bcp-weather-app', image: PUBLIC_URL + "/Assets/mern-weather.png", },
+    { name: 'Weather App', techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-weather-app', demoLink: 'https://saad-hu.github.io/project-weather-app/', image: PUBLIC_URL + "/Assets/weather-demo-0.png", },
+    { name: 'Etch A Sketch', techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-etch-a-sketch', demoLink: 'https://saad-hu.github.io/project-etch-a-sketch/', image: PUBLIC_URL + "/Assets/etch-color-demo.png", },
+    { name: 'Library', techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-library', demoLink: 'https://saad-hu.github.io/project-library/', image: PUBLIC_URL + "/Assets/library-demo.png", },
+    { name: 'Tic Tac Toe', techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-tic-tac-toe', demoLink: 'https://saad-hu.github.io/project-tic-tac-toe/', image: PUBLIC_URL + "/Assets/tic-tac-toe.png", },
+    { name: 'Rock Paper Scissors', techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-rock-paper-scissors', demoLink: 'https://saad-hu.github.io/project-rock-paper-scissors/', image: PUBLIC_URL + "/Assets/rps-demo.png", },
+    { name: 'Signup Form', techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-signup-form', demoLink: 'https://saad-hu.github.io/project-signup-form/', image: PUBLIC_URL + "/Assets/form-demo.png", },
+    { name: 'Calculator', techUsed: ['JavaScript', 'HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-calculator', demoLink: 'https://saad-hu.github.io/project-calculator/', image: PUBLIC_URL + "/Assets/calc-demo.png", },
+    { name: 'Restaurant Website', techUsed: ['Webpack', 'JavaScript', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-restaurant-page', demoLink: 'https://saad-hu.github.io/project-restaurant-page/', image: PUBLIC_URL + "/Assets/res-demo-0.png", },
+    { name: 'Dashboard', techUsed: ['HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/project-admin-dashboard', demoLink: 'https://saad-hu.github.io/project-admin-dashboard/', image: PUBLIC_URL + "/Assets/dashboard-demo.png", },
+    { name: 'Bootstrap Website', techUsed: ['HTML', 'Bootstrap'], githubRepo: 'https://github.com/saad-hu/bootstrap-ninja-book', demoLink: 'https://saad-hu.github.io/bootstrap-ninja-book/', image: PUBLIC_URL + "/Assets/bs-ninja-book.png", },
+    { name: 'Landing Page Test', techUsed: ['HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/assessment-website-0', demoLink: 'https://saad-hu.github.io/assessment-website-0/', image: PUBLIC_URL + "/Assets/test-website.png", },
+    { name: 'YouTube Clone', techUsed: ['HTML', 'CSS'], githubRepo: 'https://github.com/saad-hu/bcp-youtube-page', demoLink: 'https://saad-hu.github.io/bcp-youtube-page/', image: PUBLIC_URL + "/Assets/youtube-clone.png", },
+    { name: 'WordPress Website', techUsed: ['WordPress'], demoLink: 'https://project-wp-1.rf.gd/', image: PUBLIC_URL + "/Assets/wp-project.png", },
 ]
 
 
@@ -109,12 +98,6 @@ const ProjectsDisplay = () => {
                 ))}
 
             </Grid>
-
-            <Box mt={3}>
-                <Alert variant="filled" severity="info">
-                    MERN Projects comming soon...
-                </Alert>
-            </Box>
 
         </Box>
     );
