@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+  font-family: "Cubano";
+  src: url("../public/fonts/Cubano.ttf");
+}
 
-.fontPoppins {
-  font-family: 'Poppins', sans-serif !important;
+:root {
+  --primary-bg: rgb(18 24 27);
+  --light-shaded-text: #60a5fa;
+
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
+  background-color: var(--primary-bg);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background-color: #262626;
-}
-
-.mern-svg {
-  width: 150px;
 }
 
 /* mern logo animation */

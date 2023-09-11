@@ -1,0 +1,51 @@
+.hero-container {
+    min-height: 80vh;
+    color: white;
+
+    .name-intro-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mern-logos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mern-svg {
+        width: 120px;
+    }
+}
+
+
+.slider-animation-sentences-conatiner {
+    perspective: 400px;
+    height: 50px; //adjust height accordingly
+    overflow: hidden;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // extra styling
+    margin-block: 10px;
+
+    .animation-sentence {
+        position: absolute;
+        display: inline-block;
+
+        // text styling
+        font-size: 1.1rem;
+        color: var(--light-shaded-text);
+
+        // left: 50%;
+        // top: 50%;
+        // transform: translate(-50%, -50%);
+        // white-space: nowrap;
+    }
+}
