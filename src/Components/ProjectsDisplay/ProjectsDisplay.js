@@ -1,3 +1,8 @@
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import gsap from 'gsap';
+
+
+// MUI
 import { Stack, Box, Card, CardContent, CardActions, CardMedia, Typography, Button, Grid, Paper, Link, IconButton, Tooltip, Alert } from '@mui/material';
 
 // icons
@@ -5,6 +10,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 
+import "./projects-display.scss";
 
 
 const PUBLIC_URL = process.env.PUBLIC_URL;
@@ -40,11 +46,87 @@ const ProjectsDisplay = () => {
     }
 
 
+
+
+    let timeline = useRef();
+
+    // useLayoutEffect(() => {
+    //     const ctx = gsap.context(() => {
+    //         timeline.current = gsap.timeline()
+    //             .from(".projects-display .heading", {
+    //                 scrollTrigger: ".projects-display .heading",
+    //                 start: "bottom bottom",
+    //                 duration: 1.5,
+    //                 x: "-100%",
+    //                 filter: "blur(40px)",
+    //             })
+    //         // .to(".name.text-shadow", {
+    //         //     textShadow: "5px 5px 10px rgb(150, 150, 150)",
+    //         //     duration: 1
+    //         // })
+    //         // .from(".mern-logos-container", {
+    //         //     x: "100%",
+    //         //     duration: 0.8,
+    //         // })
+
+
+    //     })
+
+
+    //     return () => ctx.revert();
+    // }, [])
+
+
+
+    // intersection observr for heading
+    let headingRef = useRef();
+    let [isHeadingIntersecting, setIsHeadingIntersecting] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            if (headingRef.current) {
+                let headingEntry = entries[0];
+                setIsHeadingIntersecting(headingEntry.isIntersecting);
+            }
+        },
+            {
+                threshold: 0.1
+            }
+        )
+
+        observer.observe(headingRef.current);
+
+        return () => observer.disconnect();
+    }, [headingRef])
+
+
+    useEffect(() => {
+        if (isHeadingIntersecting) {
+            headingRef.current.classList.add("show");
+        } else {
+            headingRef.current.classList.remove("show");
+        }
+    }, [isHeadingIntersecting])
+
+
     return (
-        <Box px={3} pt={4} pb={6} sx={{ backgroundColor: '#f5f5f5' }}>
+        <Box
+            px={3}
+            className="projects-display"
+        >
 
-            <Typography variant='h2' mb={4} textAlign='center' className='fontPoppins' sx={{ color: '#262626' }}>Projects</Typography>
+            <Typography
+                variant='h3'
+                mb={4}
+                textAlign='center'
+                className='heading hidden'
+                ref={headingRef}
+            >
+                Projects
+            </Typography>
 
+
+            {/* grid containg projects */}
             <Grid container spacing={3}>
 
                 {projects.map((project, index) => (

@@ -1,0 +1,24 @@
+.projects-display {
+    color: var(--primary-text-color);
+
+    padding-block: 4rem;
+
+
+    .heading.hidden {
+        opacity: 0;
+        transform: translateX(-40%);
+        filter: blur(40px);
+
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    .heading.show {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0px);
+    }
+
+
+
+}

@@ -21,9 +21,10 @@ function Hero() {
         const ctx = gsap.context(() => {
             timeline.current = gsap.timeline()
                 .from(".name-intro-container", {
-                    x: "-100%",
                     delay: 0.5,
-                    duration: 1,
+                    duration: 1.5,
+                    x: "-100%",
+                    filter: "blur(40px)",
                 })
                 .to(".name.text-shadow", {
                     textShadow: "5px 5px 10px rgb(150, 150, 150)",
@@ -33,7 +34,6 @@ function Hero() {
                     x: "100%",
                     duration: 0.8,
                 })
-
 
         })
 
@@ -128,7 +128,8 @@ function Hero() {
                     justifyContent="center"
                     spacing={3}
                     mb={3}
-                    direction={{ xs: 'column', sm: 'row' }}
+                    direction="row"
+                // direction={{ xs: 'column', sm: 'row' }}
                 >
                     <img
                         src={process.env.PUBLIC_URL + "/Assets/mongodb-icon.svg"}
@@ -146,7 +147,8 @@ function Hero() {
                     alignItems="center"
                     justifyContent="center"
                     spacing={3}
-                    direction={{ xs: 'column', sm: 'row' }}
+                    direction="row"
+                // direction={{ xs: 'column', sm: 'row' }}
                 >
                     <img
                         src={process.env.PUBLIC_URL + "/Assets/reactjs-icon.svg"}

@@ -1,9 +1,8 @@
 import Hero from "../Components/Hero/Hero"
-import ProjectsDisplay from "../Components/ProjectsDisplay"
+import ProjectsDisplay from "../Components/ProjectsDisplay/ProjectsDisplay"
 import Skills from "../Components/Skills"
 import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar/Navbar"
-// import Testing from "../Testing"
 
 import { Toolbar } from "@mui/material"
 
@@ -14,7 +13,6 @@ const HomePage = () => {
             <Toolbar />
             <Hero />
 
-            {/* <Testing /> */}
 
             <ProjectsDisplay />
             <Skills />

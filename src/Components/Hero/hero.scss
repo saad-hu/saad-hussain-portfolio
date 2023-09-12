@@ -1,6 +1,6 @@
 .hero-container {
-    min-height: 80vh;
-    color: white;
+    min-height: 100vh;
+    color: var(--primary-text-color);
 
     .name-intro-container {
         display: flex;
@@ -17,6 +17,13 @@
 
     .mern-svg {
         width: 120px;
+    }
+
+
+    @media (max-width: 600px) {
+        .mern-svg {
+            width: 80px;
+        }
     }
 }
 

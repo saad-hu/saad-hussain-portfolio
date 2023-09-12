@@ -4,7 +4,9 @@
 }
 
 :root {
-  --primary-bg: rgb(18 24 27);
+  // --primary-bg: rgb(18 24 27);
+  --primary-bg: #131316;
+  --primary-text-color: white;
   --light-shaded-text: #60a5fa;
 
   box-sizing: border-box;
@@ -12,12 +14,22 @@
 
 body {
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background-color: var(--primary-bg);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+.App {
+  overflow-x: hidden;
+}
+
+
+.link-style-reset {}
+
+
 
 /* mern logo animation */
 .rotate-vert-center {

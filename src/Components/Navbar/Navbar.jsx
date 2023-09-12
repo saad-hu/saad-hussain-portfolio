@@ -15,20 +15,18 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
 // icons
-import AdbIcon from '@mui/icons-material/Adb';
+import KeyboardIcon from '@mui/icons-material/Keyboard';
 
 import "./navbar.scss"
 
 import gsap from 'gsap';
 
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Projects', 'Skills', 'Contact'];
 
 function ResponsiveAppBarWithMenuOnly() {
 
     const [anchorElNav, setAnchorElNav] = useState(null);
-    const [anchorElUser, setAnchorElUser] = useState(null);
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -38,22 +36,14 @@ function ResponsiveAppBarWithMenuOnly() {
     };
 
 
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
-    };
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
-
     let timeline = useRef();
 
     useLayoutEffect(() => {
-
         let context = gsap.context(() => {
 
             timeline.current = gsap.timeline()
                 .from(".navbar", {
-                    delay: 0.5,
+                    delay: 2,
                     duration: 1,
                     y: "-120%",
                     ease: "bounce"
@@ -74,10 +64,10 @@ function ResponsiveAppBarWithMenuOnly() {
             >
                 <Container maxWidth="xl" className='navbar-container'>
                     <Toolbar disableGutters>
-                        {/* the below AdbIcon(logo) and Typography(company name) are hidden in xs and md screens. this is for the screens above md */}
-                        <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                        {/* the below KeyboardIcon(logo) and Typography(company name) are hidden in xs and md screens. this is for the screens above md */}
+                        <KeyboardIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 0.5 }} />
                         <Typography
-                            variant="h6"
+                            variant="h5"
                             noWrap
                             component="a"
                             href="/"
@@ -86,21 +76,31 @@ function ResponsiveAppBarWithMenuOnly() {
                                 display: { xs: 'none', md: 'flex' },
                                 fontFamily: 'monospace',
                                 fontWeight: 700,
-                                letterSpacing: '.3rem',
                                 color: 'inherit',
                                 textDecoration: 'none',
+
                             }}
                         >
-                            LOGO
+                            S.H
                         </Typography>
 
                         {/* this box contains the pages buttons/links for screens above md.  */}
-                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                        <Box
+                            sx={{
+                                flexGrow: 1,
+                                display: { xs: 'none', md: 'flex' },
+                                justifyContent: "flex-end"
+                            }}
+
+                        >
                             {pages.map((page) => (
                                 <Button
                                     key={page}
-                                    // onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                    sx={{
+                                        my: 2,
+                                        display: 'block',
+                                        color: "var(--light-shaded-text)"
+                                    }}
                                 >
                                     {page}
                                 </Button>
@@ -149,8 +149,8 @@ function ResponsiveAppBarWithMenuOnly() {
                         </Box>
 
 
-                        {/* the below AdbIcon(logo) and Typography(company name) are hidden in screens above md. this is for the screens below md */}
-                        <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+                        {/* the below KeyboardIcon(logo) and Typography(company name) are hidden in screens above md. this is for the screens below md */}
+                        <KeyboardIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                         <Typography
                             variant="h5"
                             noWrap
@@ -170,42 +170,6 @@ function ResponsiveAppBarWithMenuOnly() {
                             LOGO
                         </Typography>
 
-
-
-
-
-                        {/* this Box contains the user icon for every screen. upon clicking 'user' menu opens */}
-                        <Box sx={{ flexGrow: 0 }}>
-                            <Tooltip title="Open settings">
-                                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                    <Avatar alt="Remy Sharp" />
-                                </IconButton>
-                            </Tooltip>
-
-                            {/* the 'user' menu */}
-                            <Menu
-                                sx={{ mt: '45px' }}
-                                id="menu-appbar"
-                                anchorEl={anchorElUser}
-                                anchorOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'right',
-                                }}
-                                keepMounted
-                                transformOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'right',
-                                }}
-                                open={Boolean(anchorElUser)}
-                                onClose={handleCloseUserMenu}
-                            >
-                                {settings.map((setting) => (
-                                    <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                        <Typography textAlign="center">{setting}</Typography>
-                                    </MenuItem>
-                                ))}
-                            </Menu>
-                        </Box>
                     </Toolbar>
                 </Container>
 

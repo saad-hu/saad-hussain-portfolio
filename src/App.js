@@ -15,9 +15,11 @@ function App() {
   theme = responsiveFontSizes(theme);
 
   return (
-    <ThemeProvider theme={theme}>
-      <HomePage />
-    </ThemeProvider>
+    <div className="App">
+      <ThemeProvider theme={theme}>
+        <HomePage />
+      </ThemeProvider>
+    </div>
   )
 }
 
