@@ -5,7 +5,7 @@ const skills = ['JavaScript', 'MongoDB', 'Express.js', 'React JS', 'Node.js', 'W
 
 const Skills = () => {
     return (
-        <Box px={3} pt={4} pb={6}>
+        <Box px={3} pt={4} pb={6} id="skills-section">
             <Typography variant='h2' mb={4} textAlign='center' className='fontPoppins' sx={{ color: '#262626' }}>Skills</Typography>
 
             <Stack sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 2, justifyContent: 'center' }}>

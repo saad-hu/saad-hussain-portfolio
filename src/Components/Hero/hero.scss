@@ -1,6 +1,8 @@
 .hero-container {
-    min-height: 100vh;
+    min-height: 90vh;
     color: var(--primary-text-color);
+
+    padding: 20px 10px 0px 10px;
 
     .name-intro-container {
         display: flex;
@@ -8,21 +10,27 @@
         justify-content: center;
     }
 
-    .mern-logos-container {
+    .about-me-and-mern-logos-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        padding: 2rem;
+
+        .about-me-container {
+            text-align: center;
+        }
     }
 
     .mern-svg {
-        width: 120px;
+        width: 60px;
     }
 
 
     @media (max-width: 600px) {
         .mern-svg {
-            width: 80px;
+            width: 40px;
         }
     }
 }

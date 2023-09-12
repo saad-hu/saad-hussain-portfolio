@@ -111,13 +111,12 @@ const ProjectsDisplay = () => {
 
     return (
         <Box
-            px={3}
             className="projects-display"
+            id="projects-section"
         >
 
             <Typography
                 variant='h3'
-                mb={4}
                 textAlign='center'
                 className='heading hidden'
                 ref={headingRef}

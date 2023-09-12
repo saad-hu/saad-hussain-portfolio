@@ -9,9 +9,6 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
 // icons
@@ -21,8 +18,12 @@ import "./navbar.scss"
 
 import gsap from 'gsap';
 
-
-const pages = ['Projects', 'Skills', 'Contact'];
+const pages = [
+    { name: "Home", link: "/" },
+    { name: "Projects", link: "#projects-section" },
+    { name: "Skills", link: "#skills-section" },
+    { name: "Contact", link: "/" },
+];
 
 function ResponsiveAppBarWithMenuOnly() {
 
@@ -60,6 +61,9 @@ function ResponsiveAppBarWithMenuOnly() {
                 className='navbar'
                 sx={{
                     backgroundColor: "var(--primary-bg)",
+                    boxShadow: "0px 1px 10px 2px rgb(112, 112, 112)",
+                    WebkitBoxShadow: "0px 1px 10px 2px rgb(112, 112, 112)",
+                    MozBoxShadow: "0px 1px 10px 2px rgb(112, 112, 112)",
                 }}
             >
                 <Container maxWidth="xl" className='navbar-container'>
@@ -94,16 +98,15 @@ function ResponsiveAppBarWithMenuOnly() {
 
                         >
                             {pages.map((page) => (
-                                <Button
-                                    key={page}
-                                    sx={{
-                                        my: 2,
-                                        display: 'block',
-                                        color: "var(--light-shaded-text)"
-                                    }}
+                                <a
+                                    href={page.link}
+                                    key={page.name}
+                                    className='link-style-reset navbar-link-desktop'
                                 >
-                                    {page}
-                                </Button>
+                                    <Typography>
+                                        {page.name}
+                                    </Typography>
+                                </a>
                             ))}
                         </Box>
 
@@ -141,8 +144,18 @@ function ResponsiveAppBarWithMenuOnly() {
                                 }}
                             >
                                 {pages.map((page) => (
-                                    <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                        <Typography textAlign="center">{page}</Typography>
+                                    <MenuItem
+                                        key={page.name}
+                                        onClick={handleCloseNavMenu}
+                                    >
+                                        <a
+                                            href={page.link}
+                                            className='link-style-reset'
+                                        >
+                                            <Typography>
+                                                {page.name}
+                                            </Typography>
+                                        </a>
                                     </MenuItem>
                                 ))}
                             </Menu>
@@ -162,12 +175,11 @@ function ResponsiveAppBarWithMenuOnly() {
                                 flexGrow: 1,
                                 fontFamily: 'monospace',
                                 fontWeight: 700,
-                                letterSpacing: '.3rem',
                                 color: 'inherit',
                                 textDecoration: 'none',
                             }}
                         >
-                            LOGO
+                            S.H
                         </Typography>
 
                     </Toolbar>

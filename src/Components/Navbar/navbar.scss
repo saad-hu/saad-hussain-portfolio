@@ -1,10 +1,15 @@
 .navbar {
-
     .navbar-container {
-        -webkit-box-shadow: 0px 1px 10px 2px rgb(112, 112, 112);
-        -moz-box-shadow: 0px 1px 10px 2px rgb(112, 112, 112);
-        box-shadow: 0px 1px 10px 2px rgb(112, 112, 112);
+        .navbar-link-desktop {
+            color: var(--light-shaded-text);
+            margin-right: 15px;
+
+            transition-property: transform;
+            transition-duration: 200ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
-
-
 }

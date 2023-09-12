@@ -4,7 +4,7 @@ import { useLayoutEffect, useRef, useEffect } from "react";
 import gsap from "gsap";
 
 // MUI
-import { Grid, Typography, Stack } from "@mui/material";
+import { Grid, Typography, Stack, Box } from "@mui/material";
 
 import "./hero.scss"
 
@@ -30,9 +30,10 @@ function Hero() {
                     textShadow: "5px 5px 10px rgb(150, 150, 150)",
                     duration: 1
                 })
-                .from(".mern-logos-container", {
+                .from(".about-me-and-mern-logos-container", {
                     x: "100%",
                     duration: 0.8,
+                    filter: "blur(40px)",
                 })
 
         })
@@ -80,8 +81,6 @@ function Hero() {
 
     return (
         <Grid
-            px={1}
-            py={5}
             container
             className="hero-container"
         >
@@ -89,7 +88,7 @@ function Hero() {
             {/* name and intro */}
             <Grid
                 item
-                xs={12} sm={6}
+                xs={12} sm={5}
                 className="name-intro-container"
             >
                 {/* name */}
@@ -120,16 +119,15 @@ function Hero() {
             {/* MERN logos */}
             <Grid
                 item
-                xs={12} sm={6}
-                className="mern-logos-container"
+                xs={12} sm={7}
+                className="about-me-and-mern-logos-container"
             >
                 <Stack
                     alignItems="center"
                     justifyContent="center"
                     spacing={3}
-                    mb={3}
+                    mb={2}
                     direction="row"
-                // direction={{ xs: 'column', sm: 'row' }}
                 >
                     <img
                         src={process.env.PUBLIC_URL + "/Assets/mongodb-icon.svg"}
@@ -141,15 +139,6 @@ function Hero() {
                         alt="Javascript logo"
                         className="mern-svg rotate-vert-center"
                     />
-                </Stack>
-
-                <Stack
-                    alignItems="center"
-                    justifyContent="center"
-                    spacing={3}
-                    direction="row"
-                // direction={{ xs: 'column', sm: 'row' }}
-                >
                     <img
                         src={process.env.PUBLIC_URL + "/Assets/reactjs-icon.svg"}
                         alt="React logo"
@@ -161,6 +150,34 @@ function Hero() {
                         className="mern-svg rotate-vert-center"
                     />
                 </Stack>
+
+
+                <Box className="about-me-container">
+                    <Typography
+                        className="poppins-font"
+                        sx={{ paddingInline: { xs: 0, md: 5 } }}
+                    >
+                        Committed to continuous learning and self-development. I believe that there is no limit to what can be achieved through self-education. I am a MERN stack developer, with a passion for creating innovative and effective solutions. I possess excellent self-study skills and a solid foundation in programming. Highly confident in my ability to take on challenging projects and deliver results. An outstanding problem solver, having a keen ability to analyze complex situations, identify potential roadblocks, and develop creative strategies for overcoming them.
+                    </Typography>
+                </Box>
+
+                {/* <Stack
+                    alignItems="center"
+                    justifyContent="center"
+                    spacing={3}
+                    direction="row"
+                >
+                    <img
+                        src={process.env.PUBLIC_URL + "/Assets/reactjs-icon.svg"}
+                        alt="React logo"
+                        className="mern-svg rotate-vert-center"
+                    />
+                    <img
+                        src={process.env.PUBLIC_URL + "/Assets/nodejs-icon.svg"}
+                        alt="Node logo"
+                        className="mern-svg rotate-vert-center"
+                    />
+                </Stack> */}
             </Grid>
 
         </Grid>

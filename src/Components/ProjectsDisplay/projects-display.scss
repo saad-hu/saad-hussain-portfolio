@@ -1,8 +1,11 @@
 .projects-display {
     color: var(--primary-text-color);
 
-    padding-block: 4rem;
+    padding: 90px 2rem 2rem 2rem;
 
+    .heading {
+        margin-bottom: 40px;
+    }
 
     .heading.hidden {
         opacity: 0;
