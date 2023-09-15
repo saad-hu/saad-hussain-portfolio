@@ -22,7 +22,7 @@ const pages = [
     { name: "Home", link: "/" },
     { name: "Projects", link: "#projects-section" },
     { name: "Skills", link: "#skills-section" },
-    { name: "Contact", link: "/" },
+    { name: "Contact", link: "#contact-section" },
 ];
 
 function ResponsiveAppBarWithMenuOnly() {

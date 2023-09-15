@@ -1,4 +1,4 @@
-.projects-display {
+.skills-section {
     color: var(--primary-text-color);
 
     padding: 90px 2rem 2rem 2rem;
@@ -20,5 +20,19 @@
         opacity: 1;
         transform: translateX(0);
         filter: blur(0px);
+    }
+
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+
+        .skill-box {
+            border: 2px solid var(--light-shaded-text);
+            border-radius: 16px;
+            padding: 10px 15px;
+        }
     }
 }

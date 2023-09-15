@@ -1,7 +1,7 @@
-.projects-display {
+.contact-section {
     color: var(--primary-text-color);
 
-    padding: 90px 2rem 2rem 2rem;
+    padding: 90px 2rem 90px 2rem;
 
     .heading {
         margin-bottom: 40px;
@@ -20,5 +20,21 @@
         opacity: 1;
         transform: translateX(0);
         filter: blur(0px);
+    }
+
+    .contacts-container {
+        display: flex;
+        column-gap: 40px;
+        row-gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+        .contact-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+        }
     }
 }

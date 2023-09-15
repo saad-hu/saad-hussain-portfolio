@@ -7,6 +7,11 @@ import { createTheme, ThemeProvider, responsiveFontSizes } from "@mui/material";
 function App() {
 
   let theme = createTheme({
+    palette: {
+      lightShadedText: {
+        main: '#60a5fa'
+      },
+    },
     typography: {
       fontFamily: 'Cubano, Arial, sans-serif',
     }
