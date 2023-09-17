@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useEffect } from "react";
+import { useLayoutEffect, useRef } from "react";
 
 // gsap
 import gsap from "gsap";
@@ -116,12 +116,13 @@ function Hero() {
 
 
 
-            {/* MERN logos */}
+            {/* MERN logos and about me container */}
             <Grid
                 item
                 xs={12} sm={7}
                 className="about-me-and-mern-logos-container"
             >
+                {/* logos */}
                 <Stack
                     alignItems="center"
                     justifyContent="center"
@@ -152,32 +153,15 @@ function Hero() {
                 </Stack>
 
 
+                {/* about me */}
                 <Box className="about-me-container">
                     <Typography
                         className="poppins-font"
                         sx={{ paddingInline: { xs: 0, md: 5 } }}
                     >
-                        Committed to continuous learning and self-development. I believe that there is no limit to what can be achieved through self-education. I am a MERN stack developer, with a passion for creating innovative and effective solutions. I possess excellent self-study skills and a solid foundation in programming. Highly confident in my ability to take on challenging projects and deliver results. An outstanding problem solver, having a keen ability to analyze complex situations, identify potential roadblocks, and develop creative strategies for overcoming them.
+                        I'm a MERN stack developer and software engineer on a mission to create exceptional web experiences. With expertise in JavaScript, React, Node.js, and MongoDB, I turn visions into reality. Let's build something incredible together!
                     </Typography>
                 </Box>
-
-                {/* <Stack
-                    alignItems="center"
-                    justifyContent="center"
-                    spacing={3}
-                    direction="row"
-                >
-                    <img
-                        src={process.env.PUBLIC_URL + "/Assets/reactjs-icon.svg"}
-                        alt="React logo"
-                        className="mern-svg rotate-vert-center"
-                    />
-                    <img
-                        src={process.env.PUBLIC_URL + "/Assets/nodejs-icon.svg"}
-                        alt="Node logo"
-                        className="mern-svg rotate-vert-center"
-                    />
-                </Stack> */}
             </Grid>
 
         </Grid>

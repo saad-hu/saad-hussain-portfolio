@@ -35,7 +35,7 @@ const Footer = () => {
             </Link>
 
 
-            <Divider orientation="vertical" flexItem />
+            <Divider orientation="vertical" flexItem color="white" />
 
             <Typography
                 variant="body1"
@@ -45,7 +45,7 @@ const Footer = () => {
             </Typography>
 
 
-            <Divider orientation="vertical" flexItem />
+            <Divider orientation="vertical" flexItem color="white" />
 
 
             <Typography

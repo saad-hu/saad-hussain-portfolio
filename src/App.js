@@ -9,7 +9,7 @@ function App() {
   let theme = createTheme({
     palette: {
       lightShadedText: {
-        main: '#60a5fa'
+        main: '#fbbf24'
       },
     },
     typography: {

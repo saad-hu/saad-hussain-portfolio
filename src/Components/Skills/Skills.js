@@ -65,7 +65,7 @@ const Skills = () => {
                     >
                         <Typography
                             variant="body1 font-poppins"
-                            sx={{fontSize: "20px"}}
+                            sx={{ fontSize: "20px" }}
                         >
                             {skill}
                         </Typography>
@@ -78,23 +78,25 @@ const Skills = () => {
 
 const skills = [
     'JavaScript',
-    'MongoDB',
-    'Express.js',
-    'React JS',
-    'Node.js',
-    'Webpack',
-    'Redux/Redux Toolkit',
-    'Firebase',
-    'Material UI',
-    'Socket.io',
-    'Bootstrap 5',
-    'HTML5',
-    'CSS3',
-    'SQL',
     'C/C++',
-    'MATLAB',
-    'Linux OS (Ubuntu)',
-    'WordPress'
+    'React JS',
+    'Redux/Redux Toolkit',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    "Next.js",
+    'Material UI',
+    "Ant Design",
+    "CoreUI",
+    "styled-components",
+    'Bootstrap',
+    "WebSocket",
+    'Socket.io',
+    'SQL',
+    "NoSQL",
+    "EJS",
+    "GSAP",
+    "WordPress"
 ];
 
 export default Skills;
