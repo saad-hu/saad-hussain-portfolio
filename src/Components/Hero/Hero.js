@@ -21,7 +21,7 @@ function Hero() {
         const ctx = gsap.context(() => {
             timeline.current = gsap.timeline()
                 .from(".name-intro-container", {
-                    delay: 0.5,
+                    delay: 2,
                     duration: 1.5,
                     x: "-100%",
                     filter: "blur(40px)",

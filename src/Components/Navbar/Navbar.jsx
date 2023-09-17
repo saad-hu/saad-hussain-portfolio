@@ -44,7 +44,7 @@ function ResponsiveAppBarWithMenuOnly() {
 
             timeline.current = gsap.timeline()
                 .from(".navbar", {
-                    delay: 2,
+                    delay: 3.5,
                     duration: 1,
                     y: "-120%",
                     ease: "bounce"
