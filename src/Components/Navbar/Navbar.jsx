@@ -19,7 +19,7 @@ import "./navbar.scss"
 import gsap from 'gsap';
 
 const pages = [
-    { name: "Home", link: "/" },
+    { name: "Home", link: "/saad-hussain-portfolio" },
     { name: "Projects", link: "#projects-section" },
     { name: "Skills", link: "#skills-section" },
     { name: "Contact", link: "#contact-section" },
@@ -74,7 +74,7 @@ function ResponsiveAppBarWithMenuOnly() {
                             variant="h5"
                             noWrap
                             component="a"
-                            href="/"
+                            href="/saad-hussain-portfolio"
                             sx={{
                                 mr: 2,
                                 display: { xs: 'none', md: 'flex' },
