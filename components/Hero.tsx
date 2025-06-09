@@ -3,7 +3,7 @@ import { SparklesCore } from "./ui/sparkles";
 import Image from "next/image";
 import { TypewriterEffect } from "./ui/typewriter-effect";
 
-export function Hero() {
+const Hero = () => {
     return (
         <div className="h-screen relative w-full overflow-hidden">
             <div className="w-full absolute inset-0 h-full">
@@ -57,3 +57,5 @@ export function Hero() {
         </div>
     );
 }
+
+export default Hero;
