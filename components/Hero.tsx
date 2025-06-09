@@ -25,6 +25,7 @@ const Hero = () => {
             className="h-screen relative w-full overflow-hidden"
             ref={containerRef}
         >
+            {/* background sparkles */}
             <div className="w-full absolute inset-0 h-full">
                 <SparklesCore
                     id="tsparticlesfullpage"
@@ -37,22 +38,26 @@ const Hero = () => {
                 />
             </div>
 
-            <div className="h-full flex items-center gap-2">
+            {/* main left and right sections */}
+            <div className="py-10 px-8 h-full flex max-sm:flex-col justify-center items-center gap-4">
+
                 {/* left text section */}
                 <motion.div
-                    className="flex-1 pl-10"
+                    className="sm:flex-1"
                     style={{
                         x: xTextContainer
                     }}
                 >
-                    <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-xl border border-white/14 mb-3.5">
-                        <h1 className="text-lg">
-                            Hi, I'm <span className="text-white font-bold"><WavyText text="Saad Hussain" /></span>
-                        </h1>
+                    <div className="flex max-sm:justify-center">
+                        <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-xl border border-white/14 mb-3.5">
+                            <h1 className="text-lg">
+                                Hi, I'm <span className="text-white font-bold"><WavyText text="Saad Hussain" /></span>
+                            </h1>
+                        </div>
                     </div>
 
                     <TypewriterEffect
-                        className="sm:text-xl md:text-3xl lg:text-5xl"
+                        className="text-4xl lg:text-6xl max-sm:text-center"
                         words={[
                             { text: "I'm" },
                             { text: "a" },
@@ -72,12 +77,12 @@ const Hero = () => {
 
                 {/* right image section */}
                 <motion.div
-                    className="h-[80%] flex-1"
+                    className="max-sm:w-[100%] h-[40%] sm:h-[80%] sm:flex-1"
                     style={{
                         y: yPictureContainer
                     }}
                 >
-                    <div className="relative h-full w-[95%]">
+                    <div className="relative h-full w-full">
                         <Image
                             src="/hero-person.png"
                             alt="hero image"
