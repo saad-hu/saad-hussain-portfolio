@@ -3,6 +3,7 @@
 :root {
   --background: #000319;
   --text: #e7e5e4;
+  --primary: #3b82f6;
 }
 
 /* override variables here for dark theme */
@@ -11,6 +12,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-text: var(--text);
+  --color-primary: var(--primary);
   --font-primary: var(--font-poppins);
   --font-secondary: var(--font-roboto);
 }
