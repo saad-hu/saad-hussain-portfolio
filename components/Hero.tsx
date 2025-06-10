@@ -57,7 +57,7 @@ const Hero = () => {
                     </div>
 
                     <TypewriterEffect
-                        className="text-4xl lg:text-6xl max-sm:text-center"
+                        className="text-4xl lg:text-6xl max-sm:text-center font-[theme(--font-primary)]"
                         words={[
                             { text: "I'm" },
                             { text: "a" },
