@@ -7,7 +7,12 @@ export default function Home() {
 
       <Hero />
 
-      <Projects />
+      <section className="section-border-divider">
+        <div className="section-container section-padding">
+          <Projects />
+        </div>
+      </section>
+
     </div>
   );
 }

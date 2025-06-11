@@ -3,6 +3,7 @@
 :root {
   --background: #000319;
   --text: #e7e5e4;
+  --text-secondary: #ffffff;
   --primary: #3b82f6;
 }
 
@@ -12,6 +13,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-text: var(--text);
+  --color-text-secondary: var(--text-secondary);
   --color-primary: var(--primary);
   --font-primary: var(--font-poppins);
   --font-secondary: var(--font-roboto);
@@ -21,4 +23,20 @@ body {
   background: var(--background);
   color: var(--text);
   font-family: var(--font-roboto), system-ui, sans-serif;
+}
+
+.section-container {
+  @apply max-w-screen-xl mx-auto pt-16 pb-12 px-4;
+}
+
+.section-padding {
+  @apply pt-16 pb-12 px-4;
+}
+
+.section-heading {
+  @apply font-[theme(--font-primary)] text-3xl md:text-4xl lg:text-5xl text-center font-bold
+}
+
+.section-border-divider {
+  @apply border-t border-white/10
 }
