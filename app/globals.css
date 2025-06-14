@@ -6,6 +6,8 @@
   --text: #e7e5e4;
   --text-secondary: #ffffff;
   --primary: #3b82f6;
+  --primary-dark: #2563eb;
+  --primary-light: #60a5fa;
 }
 
 /* override variables here for dark theme */
@@ -16,6 +18,8 @@
   --color-text: var(--text);
   --color-text-secondary: var(--text-secondary);
   --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
   --font-primary: var(--font-poppins);
   --font-secondary: var(--font-roboto);
 }
