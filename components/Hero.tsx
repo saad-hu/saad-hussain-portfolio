@@ -61,9 +61,9 @@ const Hero = () => {
                         words={[
                             { text: "I'm" },
                             { text: "a" },
-                            { text: "Full", className: "text-[theme(color-primary)]" },
-                            { text: "Stack", className: "text-[theme(color-primary)]" },
-                            { text: "Developer.", className: "text-[theme(color-primary)]" },
+                            { text: "Full", className: "text-[theme(--color-primary)]" },
+                            { text: "Stack", className: "text-[theme(--color-primary)]" },
+                            { text: "Developer.", className: "text-[theme(--color-primary)]" },
                             { text: "Let's" },
                             { text: "build" },
                             { text: "and" },
