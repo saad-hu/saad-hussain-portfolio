@@ -3,6 +3,7 @@
 
 :root {
   --background: #000319;
+  --background-secondary: #272932;
   --text: #e7e5e4;
   --text-secondary: #ffffff;
   --primary: #3b82f6;
@@ -15,6 +16,7 @@
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
   --color-text: var(--text);
   --color-text-secondary: var(--text-secondary);
   --color-primary: var(--primary);
