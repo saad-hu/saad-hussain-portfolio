@@ -33,7 +33,7 @@ const Button: React.FC<ButtonProps> = ({
             )}
             disabled={loading ? true : (props.disabled ? props.disabled : false)}
         >
-            <motion.div className="flex items-center gap-1">
+            <motion.div className="flex items-center gap-1.5">
                 {children}
 
                 {loading && (

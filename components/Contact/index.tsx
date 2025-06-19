@@ -1,5 +1,5 @@
-
 import GlobeWrapper from './GlobeWrapper';
+import ContactForm from './ContactForm';
 
 const Contact = () => {
 
@@ -10,13 +10,13 @@ const Contact = () => {
 
             <div className='flex gap-5 flex-col lg:flex-row'>
 
-                <div className="lg:flex-1 flex flex-row items-center justify-center h-[60vh] sm:h-[80vh] lg:h-[40rem] relative w-full">
+                <div className="lg:flex-1 flex flex-row items-center justify-center h-[50vh] sm:h-[75vh] lg:h-[40rem] relative w-full">
                     <GlobeWrapper />
                 </div>
 
 
                 <div className='lg:flex-1'>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deleniti fugit voluptatibus provident labore aut temporibus dolorum quidem? Quod nostrum laboriosam corrupti dignissimos provident. A eaque aut dolorem ducimus sit.</h3>
+                    <ContactForm />
                 </div>
             </div>
         </div>

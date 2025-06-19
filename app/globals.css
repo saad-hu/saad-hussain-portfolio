@@ -47,3 +47,7 @@ body {
 .section-border-divider {
   @apply border-t border-white/10
 }
+
+.label {
+  @apply block mb-2 font-primary font-bold text-sm;
+}
