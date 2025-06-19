@@ -16,13 +16,13 @@ const Hero = () => {
         offset: ["start start", "end start"]
     });
 
-    const yPictureContainer = useTransform(scrollYProgress, [0, 1], ["0%", "-120%"]);
+    const yPictureContainer = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
     const xTextContainer = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
 
 
     return (
         <div
-            className="h-screen relative w-full overflow-hidden"
+            className="h-[100svh] relative w-full overflow-hidden"
             ref={containerRef}
         >
             {/* background sparkles */}
