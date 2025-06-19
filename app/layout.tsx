@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
+import ToasterWrapper from "@/components/ToasterWrapper";
 
 // Primary font for headings and accents
 const poppins = Poppins({
@@ -33,6 +34,7 @@ export default function RootLayout({
         className={`${poppins.variable} ${roboto.variable} antialiased`}
       >
         {children}
+        <ToasterWrapper />
       </body>
     </html>
   );
