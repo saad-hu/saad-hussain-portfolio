@@ -11,6 +11,7 @@ const ToasterWrapper = () => {
                     backgroundColor: "var(--background-secondary)",
                     color: "var(--text-secondary)"
                 },
+                duration: 5000
             }}
         >
             {(t) => (
