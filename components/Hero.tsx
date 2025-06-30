@@ -50,14 +50,14 @@ const Hero = () => {
                 >
                     <div className="flex max-sm:justify-center">
                         <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-xl border border-white/14 mb-3.5">
-                            <h1 className="text-lg">
+                            <h1 className="text-sm sm:text-lg">
                                 Hi, I'm <span className="text-white font-bold"><WavyText text="Saad Hussain" /></span>
                             </h1>
                         </div>
                     </div>
 
                     <TypewriterEffect
-                        className="text-4xl lg:text-6xl max-sm:text-center font-[theme(--font-primary)]"
+                        className="text-3xl sm:text-4xl lg:text-6xl max-sm:text-center font-[theme(--font-primary)]"
                         words={[
                             { text: "I'm" },
                             { text: "a" },
