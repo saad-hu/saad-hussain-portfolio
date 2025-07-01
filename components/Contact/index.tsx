@@ -1,11 +1,12 @@
 import GlobeWrapper from './GlobeWrapper';
 import ContactForm from './ContactForm';
+import SectionHeading from '../SectionHeading';
 
 const Contact = () => {
 
     return (
         <div>
-            <h2 className='section-heading mb-7'>Let's Connect</h2>
+            <SectionHeading>Let's Connect</SectionHeading>
 
 
             <div className='flex gap-5 flex-col lg:flex-row items-stretch lg:items-center'>

@@ -5,11 +5,12 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import { experiences } from "@/lib/constants/experience";
+import SectionHeading from "./SectionHeading";
 
 const Experience = () => {
     return (
         <div>
-            <h2 className='section-heading mb-7'>Experience</h2>
+            <SectionHeading>Experience</SectionHeading>
 
             <Accordion
                 type="single"

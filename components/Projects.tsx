@@ -2,11 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import { ExternalLink } from 'lucide-react';
 import { projectList } from '@/lib/constants/projects';
+import SectionHeading from './SectionHeading';
 
 const Projects = () => {
     return (
         <div>
-            <h2 className='section-heading mb-7'>Projects</h2>
+            <SectionHeading>Projects</SectionHeading>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projectList.map((project) => (
