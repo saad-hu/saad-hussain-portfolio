@@ -3,11 +3,16 @@ import Image from 'next/image'
 import { ExternalLink } from 'lucide-react';
 import { projectList } from '@/lib/constants/projects';
 import SectionHeading from './SectionHeading';
+import SectionParagraph from './SectionParagraph';
 
 const Projects = () => {
     return (
         <div>
             <SectionHeading>Projects</SectionHeading>
+
+            <SectionParagraph>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum corporis tempora unde consectetur earum excepturi consequuntur voluptatibus quas, ullam facilis, deserunt accusamus explicabo ipsum modi dolorem asperiores atque accusantium illo.
+            </SectionParagraph>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projectList.map((project) => (

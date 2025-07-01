@@ -6,11 +6,16 @@ import {
 } from "@/components/ui/accordion";
 import { experiences } from "@/lib/constants/experience";
 import SectionHeading from "./SectionHeading";
+import SectionParagraph from "./SectionParagraph";
 
 const Experience = () => {
     return (
         <div>
             <SectionHeading>Experience</SectionHeading>
+
+            <SectionParagraph>
+                With hands-on industry experience, I've contributed to both small startups and large-scale enterprise projects, adapting seamlessly to varying scopes and team dynamics. I'm equally comfortable working independently or collaborating within cross-functional teams, and I've had the opportunity to lead development efforts and guide teams toward successful project delivery.
+            </SectionParagraph>
 
             <Accordion
                 type="single"
