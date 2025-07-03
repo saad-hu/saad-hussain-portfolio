@@ -17,6 +17,7 @@ const SectionHeading: React.FC<React.HTMLAttributes<HTMLHeadingElement>> = ({ cl
             whileInView={{
                 opacity: 1
             }}
+            viewport={{ amount: "all" }}
         >
             {children}
         </motion.h2>

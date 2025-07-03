@@ -11,7 +11,7 @@ const Projects = () => {
             <SectionHeading>Projects</SectionHeading>
 
             <SectionParagraph>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum corporis tempora unde consectetur earum excepturi consequuntur voluptatibus quas, ullam facilis, deserunt accusamus explicabo ipsum modi dolorem asperiores atque accusantium illo.
+                I've worked on a wide range of web projects spanning SaaS platforms, B2B tools, and B2C applications. From idea to deployment, I've built and contributed to products across different industries and user needs, solving real-world problems with scalable and user-focused solutions. Below are a few examples of the projects I've worked on.
             </SectionParagraph>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
