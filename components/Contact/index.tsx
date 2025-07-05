@@ -1,6 +1,7 @@
 import GlobeWrapper from './GlobeWrapper';
 import ContactForm from './ContactForm';
 import SectionHeading from '../SectionHeading';
+import ContactDetails from './ContactDetails';
 
 const Contact = () => {
 
@@ -15,11 +16,12 @@ const Contact = () => {
                     <GlobeWrapper />
                 </div>
 
-
                 <div className='lg:flex-1'>
                     <ContactForm />
                 </div>
             </div>
+
+            <ContactDetails />
         </div>
     )
 }
