@@ -4,7 +4,9 @@ import React from 'react'
 import { cn } from '@/lib/utils'
 import { motion } from 'motion/react'
 
-const SectionHeading: React.FC<React.HTMLAttributes<HTMLHeadingElement>> = ({ className, children }) => {
+type SectionHeadingProps = React.FC<React.HTMLAttributes<HTMLHeadingElement> & { viewportAmount?: number | "all" | "some" | undefined }>
+
+const SectionHeading: SectionHeadingProps = ({ className, children, viewportAmount = "all" }) => {
     return (
         <motion.h2
             className={cn('section-heading mb-7', className)}
@@ -17,7 +19,7 @@ const SectionHeading: React.FC<React.HTMLAttributes<HTMLHeadingElement>> = ({ cl
             whileInView={{
                 opacity: 1
             }}
-            viewport={{ amount: "all" }}
+            viewport={{ amount: viewportAmount }}
         >
             {children}
         </motion.h2>

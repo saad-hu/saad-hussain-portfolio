@@ -6,9 +6,11 @@
   --background-secondary: #272932;
   --text: #e7e5e4;
   --text-secondary: #ffffff;
+  --text-tertiary: #b3b1b0;
   --primary: #3b82f6;
   --primary-dark: #2563eb;
   --primary-light: #60a5fa;
+  --border-one: #333846;
 }
 
 /* override variables here for dark theme */
@@ -19,9 +21,11 @@
   --color-background-secondary: var(--background-secondary);
   --color-text: var(--text);
   --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
   --color-primary: var(--primary);
   --color-primary-dark: var(--primary-dark);
   --color-primary-light: var(--primary-light);
+  --color-border-one: var(--border-one);
   --font-primary: var(--font-poppins);
   --font-secondary: var(--font-roboto);
 }
