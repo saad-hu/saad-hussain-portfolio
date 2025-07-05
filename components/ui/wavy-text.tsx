@@ -18,7 +18,7 @@ export function WavyText({ text }: { text: string }) {
                     transition={{
                         duration: 0.5,
                         repeat: Infinity,
-                        repeatDelay: 5,
+                        repeatDelay: 3,
                         delay: index * 0.05,
                     }}
                     className="inline-block whitespace-pre font-sans tracking-tight"
